@@ -3,5 +3,47 @@
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Portfolio" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
-{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
+
+{% block body %}
+    <style>
+        div {
+            width: 1000px;
+            margin: auto;
+            
+        }
+    </style>
+    <div>
+
+    <table border="1" width="100%">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:20%">
+        <col style="width:20%">
+        <thead>
+        <tr>
+        <th>Date Finished</th>
+        <th>Books</th>
+        <th>Author</th>
+        <th>Rating</th>
+        <th>Notes</th>
+        </tr>
+        <tr>
+            <td>9/17/2022</td>
+            <td>Looking For Alaska</td>
+            <td>John Green</td>
+            <td>⭐</td>
+            <td>No</td>
+        </tr>
+
+        <tr>
+            <td>9/26/2022</td>
+            <td>Where the Crawdads Sing</td>
+            <td>Delia Owens</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>I liked it</td>
+        </tr>
+
+    </table>
+    </div>
+{% endblock %}
+    
